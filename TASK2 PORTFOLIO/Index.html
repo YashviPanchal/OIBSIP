@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ff281ed761.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-y"></i>
+                    <div class="logo-text">Yashvi Panchal</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="main-pic">
+                    <img src="https://media.licdn.com/dms/image/D5603AQGFrBL2OeK9IA/profile-displayphoto-shrink_400_400/0/1682946696945?e=1689811200&v=beta&t=g7maOw2DJyuGU5rEyH1bSY9NaSxz54e6PyPWGDrm4XU" alt="profile pic" height="300" width="150">
+                </div>
+                <div class="main-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Yashvi Panchal</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sequi sit asperiores animi beatae est odit vel molestiae reprehenderit unde.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+        var typed = new Typed(".input",{
+            strings:["Frontend Developer","Python Developer","College Student"],
+            typedSpeed:40,
+            backSpeed:70,
+            loop:true
+        })
+    </script>
+</body>
+</html>
